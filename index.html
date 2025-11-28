@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Andyka Fadhil Pratama</title>
-  <link rel="stylesheet" href="src/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <script src="src/script.js"></script>
     
     <header>
         <nav class="container">
             <div class="logo">
                 <a href="#">Andyka Fadhil Pratama.</a>
             </div>
+            
+            <!-- Desktop Menu -->
             <ul>
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -22,8 +23,29 @@
                 <li><a href="#projects">Proyek</a></li>
                 <li><a href="#contact">Kontak</a></li>
             </ul>
+            
+            <!-- Hamburger Icon (Mobile Only) -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay"></div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skill</a></li>
+            <li><a href="#projects">Proyek</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </div>
 
     <main>
         <section id="hero" class="container">
@@ -213,7 +235,7 @@
                     <textarea id="message" name="message" rows="5" required placeholder="Tulis pesan Anda..."></textarea>
                 </div>
                 
-                <button type="submit" id="my-form-button" class="btn btn-primary" >Kirim Pesan</button>
+                <button type="submit" id="my-form-button" class="btn btn-primary">Kirim Pesan</button>
                 
                 <p id="my-form-status" class="form-status"></p>
             </form>
