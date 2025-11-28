@@ -135,11 +135,7 @@ header {
     background: rgba(21, 16, 34, 0.95); 
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-<<<<<<< HEAD
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-=======
-    border-bottom: 1px solid var(--glass-border);
->>>>>>> 401bb9bac6647608802822ef422fc7492a0a6c00
     z-index: 1000;
     transition: all 0.3s ease;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
@@ -185,11 +181,7 @@ nav a:hover {
     display: none;
     flex-direction: column;
     cursor: pointer;
-<<<<<<< HEAD
     z-index: 1002;
-=======
-    z-index: 1001;
->>>>>>> 401bb9bac6647608802822ef422fc7492a0a6c00
     position: relative;
     width: 30px;
     height: 24px;
@@ -230,11 +222,7 @@ nav a:hover {
     background: rgba(21, 16, 34, 0.85);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-<<<<<<< HEAD
     z-index: 998;
-=======
-    z-index: 999;
->>>>>>> 401bb9bac6647608802822ef422fc7492a0a6c00
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.4s ease, visibility 0.4s ease;
@@ -253,21 +241,12 @@ nav a:hover {
     width: 75%;
     max-width: 320px;
     height: 100vh;
-<<<<<<< HEAD
     background: rgba(21, 16, 34, 0.98);
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
     border-left: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: -5px 0 30px rgba(0, 0, 0, 0.5);
     z-index: 999;
-=======
-    background: var(--glass-bg);
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
-    border-left: var(--glass-border);
-    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
->>>>>>> 401bb9bac6647608802822ef422fc7492a0a6c00
     padding: 5rem 2rem 2rem;
     overflow-y: auto;
     transition: right 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -789,25 +768,9 @@ footer p {
     #hero {
         padding-top: 120px;
     }
-<<<<<<< HEAD
     
     .hero-content h1 {
         font-size: 3.5rem;
-=======
-    .hero-buttons {
-        justify-content: center;
-    }
-    .hero-image {
-        margin-top: 2rem;
-        order: -1;
-    }
-    .hero-image img {
-        max-width: 70%;
-    }
-    .about-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
->>>>>>> 401bb9bac6647608802822ef422fc7492a0a6c00
     }
     
     .skills-grid {
@@ -816,9 +779,6 @@ footer p {
     
     .projects-grid {
         grid-template-columns: repeat(3, 1fr);
-    }
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -829,7 +789,6 @@ footer p {
         padding: 0 2rem;
     }
     
-<<<<<<< HEAD
     header {
         padding: 1rem 0;
     }
@@ -922,25 +881,11 @@ footer p {
     /* Header */
     header {
         padding: 1rem 0;
-=======
-    /* Show Hamburger, Hide Desktop Menu */
-    .hamburger {
-        display: flex;
-    }
-    
-    nav ul {
-        display: none;
-    }
-    
-    .mobile-menu-overlay {
-        display: block;
->>>>>>> 401bb9bac6647608802822ef422fc7492a0a6c00
     }
     
     nav .logo a {
         font-size: 1.2rem;
     }
-<<<<<<< HEAD
     
     /* Show Hamburger, Hide Desktop Menu */
     .hamburger {
@@ -1012,11 +957,6 @@ footer p {
     .about-text p {
         font-size: 0.95rem;
     }
-=======
-
-    .section-title { font-size: 2rem; }
-    .hero-content h1 { font-size: 2.5rem; }
->>>>>>> 401bb9bac6647608802822ef422fc7492a0a6c00
     
     .stats-grid { 
         grid-template-columns: 1fr;
@@ -1047,17 +987,12 @@ footer p {
         font-size: 2.5rem;
         margin-bottom: 1rem;
     }
-<<<<<<< HEAD
     
     .skill-card h4 {
         font-size: 1.1rem;
     }
     
     .skill-card p {
-=======
-    .filter-btn {
-        padding: 0.6rem 1.2rem;
->>>>>>> 401bb9bac6647608802822ef422fc7492a0a6c00
         font-size: 0.9rem;
     }
     
@@ -1146,7 +1081,6 @@ footer p {
         flex-direction: column;
         gap: 1rem;
     }
-<<<<<<< HEAD
     
     .social-icon {
         font-size: 1rem;
@@ -1177,6 +1111,3 @@ footer p {
         height: 55px;
     }
 }
-=======
-}
->>>>>>> 401bb9bac6647608802822ef422fc7492a0a6c00
