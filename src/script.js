@@ -17,7 +17,42 @@ document.addEventListener('DOMContentLoaded', function() {
     const inputEmail = document.getElementById('email');
     const inputMessage = document.getElementById('message');
 
-    // --- PERBAIKAN: LOGIKA FILTER PROYEK (DITAMBAHKAN DI SINI) ---
+    // --- VARIABEL HAMBURGER MENU ---
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+    const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
+    const body = document.body;
+
+    // --- HAMBURGER MENU FUNCTIONALITY ---
+    function toggleMobileMenu() {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        mobileMenuOverlay.classList.toggle('active');
+        body.classList.toggle('menu-open');
+    }
+
+    // Event listener untuk hamburger button
+    if (hamburger) {
+        hamburger.addEventListener('click', function(e) {
+            e.stopPropagation();
+            toggleMobileMenu();
+        });
+    }
+
+    // Event listener untuk overlay (close menu when clicking outside)
+    if (mobileMenuOverlay) {
+        mobileMenuOverlay.addEventListener('click', toggleMobileMenu);
+    }
+
+    // Close menu ketika link diklik
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            toggleMobileMenu();
+        });
+    });
+
+    // --- LOGIKA FILTER PROYEK ---
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
 
@@ -49,12 +84,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     card.style.transform = 'translateY(20px)';
                     setTimeout(() => {
                         card.style.display = 'none';
-                    }, 300); // Sesuaikan dengan durasi transisi CSS
+                    }, 300);
                 }
             });
         });
     });
-    // ---------------------------------------------------------
 
     // --- SCROLL HEADER EFFECT ---
     window.addEventListener('scroll', function() {
