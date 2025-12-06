@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // 3. Ambil value filter dari tombol yang diklik
             const filterValue = btn.getAttribute('data-filter');
-
+ 
             // 4. Filter Project Cards
             projectCards.forEach(card => {
                 const category = card.getAttribute('data-category');
