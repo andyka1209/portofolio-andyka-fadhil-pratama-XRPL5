@@ -197,7 +197,7 @@ nav a:hover {
     transform-origin: center;
 }
 
-/* Hamburger Animation */
+
 .hamburger.active span:nth-child(1) {
     transform: translateY(10.5px) rotate(45deg);
 }
@@ -211,7 +211,7 @@ nav a:hover {
     transform: translateY(-10.5px) rotate(-45deg);
 }
 
-/* Mobile Menu Overlay */
+
 .mobile-menu-overlay {
     display: none;
     position: fixed;
@@ -233,7 +233,7 @@ nav a:hover {
     visibility: visible;
 }
 
-/* Mobile Menu Container */
+
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -302,7 +302,7 @@ nav a:hover {
     color: var(--color-white);
 }
 
-/* ===== SECTION HERO ===== */
+
 #hero {
     min-height: 100vh;
     display: grid;
@@ -353,7 +353,7 @@ nav a:hover {
     box-shadow: 0 0 40px rgba(125, 82, 253, 0.5);
 }
 
-/* ===== SECTION ABOUT ME ===== */
+
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
@@ -400,7 +400,7 @@ nav a:hover {
     margin-top: 0.5rem;
 }
 
-/* ===== SECTION MY SKILLS ===== */
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -484,7 +484,7 @@ nav a:hover {
     filter: drop-shadow(0 0 15px rgba(157, 134, 255, 0.7));
 }
 
-/* ===== SECTION PROJECTS ===== */
+
 #projects {
     padding-top: 8rem;
 }
@@ -564,7 +564,7 @@ nav a:hover {
     font-weight: 600;
 }
 
-/* ===== CONTACT FORM ===== */
+
 #contact-form {
     padding: 6rem 0;
 }
@@ -655,7 +655,7 @@ nav a:hover {
     display: block;
 }
 
-/* ===== FOOTER ===== */
+
 footer {
     text-align: center;
     padding: 3rem 0 2rem;
@@ -727,7 +727,7 @@ footer p {
     color: rgba(255, 255, 255, 0.6);
 }
 
-/* ===== ANIMASI ===== */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -759,7 +759,6 @@ footer p {
 
 /* ===== RESPONSIVE DESIGN ===== */
 
-/* ===== LAPTOP & DESKTOP (1025px ke atas) ===== */
 @media (min-width: 1025px) {
     .container {
         max-width: 1200px;
@@ -782,7 +781,7 @@ footer p {
     }
 }
 
-/* ===== TABLET (768px - 1024px) ===== */
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .container {
         max-width: 960px;
@@ -866,9 +865,9 @@ footer p {
     }
 }
 
-/* ===== SMARTPHONE (320px - 767px) ===== */
+
 @media (max-width: 767px) {
-    /* Container & Spacing */
+  
     .container { 
         padding: 0 1rem; 
         max-width: 100%;
@@ -878,7 +877,7 @@ footer p {
         padding: 4rem 0 3rem;
     }
     
-    /* Header */
+    
     header {
         padding: 1rem 0;
     }
@@ -887,7 +886,7 @@ footer p {
         font-size: 1.2rem;
     }
     
-    /* Show Hamburger, Hide Desktop Menu */
+   
     .hamburger {
         display: flex;
     }
@@ -900,7 +899,7 @@ footer p {
         display: block;
     }
     
-    /* Hero Section */
+   
     #hero {
         grid-template-columns: 1fr;
         text-align: center;
@@ -943,7 +942,7 @@ footer p {
         max-width: 85%;
     }
     
-    /* About Section */
+    
     .about-grid {
         grid-template-columns: 1fr;
         text-align: center;
@@ -968,7 +967,7 @@ footer p {
         font-size: 2rem;
     }
     
-    /* Skills Section */
+  
     .section-title { 
         font-size: 1.8rem;
         margin-bottom: 2rem;
@@ -1010,7 +1009,7 @@ footer p {
         height: 65px;
     }
     
-    /* Projects Section */
+   
     #projects {
         padding-top: 5rem;
     }
@@ -1040,7 +1039,7 @@ footer p {
         font-size: 1.2rem;
     }
     
-    /* Contact Form */
+    
     #contact-form {
         padding: 4rem 0;
     }
@@ -1064,7 +1063,7 @@ footer p {
         padding: 14px;
     }
     
-    /* Footer */
+  
     footer {
         padding: 2rem 0 1.5rem;
     }
@@ -1091,7 +1090,7 @@ footer p {
     }
 }
 
-/* ===== EXTRA SMALL DEVICES (320px - 480px) ===== */
+
 @media (max-width: 480px) {
     .hero-content h1 {
         font-size: 1.8rem;

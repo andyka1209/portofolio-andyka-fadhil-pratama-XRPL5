@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // --- DEFINISI VARIABEL ---
+
     const header = document.querySelector('header');
     const navLinks = document.querySelectorAll('nav a');
     const heroTitle = document.querySelector('.hero-content h1');
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const statsSection = document.querySelector('.stats-grid');
     const statNumbers = document.querySelectorAll('.stat-card h3');
     
-    // Variabel Form
+
     const form = document.getElementById('my-form');
     const formButton = document.getElementById('my-form-button');
     const formStatus = document.getElementById('my-form-status');
@@ -17,14 +17,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const inputEmail = document.getElementById('email');
     const inputMessage = document.getElementById('message');
 
-    // --- VARIABEL HAMBURGER MENU ---
+  
     const hamburger = document.querySelector('.hamburger');
     const mobileMenu = document.querySelector('.mobile-menu');
     const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
     const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
     const body = document.body;
 
-    // --- HAMBURGER MENU FUNCTIONALITY ---
+    
     function toggleMobileMenu() {
         hamburger.classList.toggle('active');
         mobileMenu.classList.toggle('active');
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         body.classList.toggle('menu-open');
     }
 
-    // Event listener untuk hamburger button
+    
     if (hamburger) {
         hamburger.addEventListener('click', function(e) {
             e.stopPropagation();
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Event listener untuk overlay (close menu when clicking outside)
+   
     if (mobileMenuOverlay) {
         mobileMenuOverlay.addEventListener('click', toggleMobileMenu);
     }
@@ -52,34 +52,33 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // --- LOGIKA FILTER PROYEK ---
+    
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
 
     filterButtons.forEach(btn => {
         btn.addEventListener('click', () => {
-            // 1. Hapus class active dari semua tombol
+            
             filterButtons.forEach(b => b.classList.remove('active'));
-            // 2. Tambah class active ke tombol yang diklik
+           
             btn.classList.add('active');
 
-            // 3. Ambil value filter dari tombol yang diklik
             const filterValue = btn.getAttribute('data-filter');
  
-            // 4. Filter Project Cards
+         
             projectCards.forEach(card => {
                 const category = card.getAttribute('data-category');
 
                 if (filterValue === 'all' || filterValue === category) {
-                    // Tampilkan card
+                  
                     card.style.display = 'block'; 
-                    // Timeout kecil untuk memicu transisi CSS
+                   
                     setTimeout(() => {
                         card.style.opacity = '1';
                         card.style.transform = 'translateY(0)';
                     }, 50);
                 } else {
-                    // Sembunyikan card (animasi dulu baru hilang)
+                   
                     card.style.opacity = '0';
                     card.style.transform = 'translateY(20px)';
                     setTimeout(() => {
@@ -90,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // --- SCROLL HEADER EFFECT ---
+ 
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {
             header.style.background = 'rgba(21, 16, 34, 0.95)';
@@ -101,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // --- TYPING EFFECT ---
+
     if (heroTitle) {
         const text = heroTitle.textContent;
         heroTitle.textContent = '';
@@ -118,7 +117,6 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(typeText, 500);
     }
 
-    // --- REVEAL ANIMATION ---
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -135,7 +133,6 @@ document.addEventListener('DOMContentLoaded', function() {
         revealObserver.observe(card);
     });
 
-    // --- SMOOTH SCROLL ---
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
@@ -149,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // --- SKILL ICON HOVER ---
+   
     skillIcons.forEach(icon => {
         icon.addEventListener('mouseenter', function() {
             this.style.transform = 'scale(1.2) rotate(10deg)';
@@ -161,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // --- GLASSMOPHISM MOUSE EFFECT ---
+   
     glassCards.forEach(card => {
         card.addEventListener('mousemove', function(e) {
             const rect = card.getBoundingClientRect();
@@ -173,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // --- STATS ANIMATION ---
+
     let statsAnimated = false;
     const statsObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -213,7 +210,7 @@ document.addEventListener('DOMContentLoaded', function() {
         statsObserver.observe(statsSection);
     }
 
-    // --- FORM HANDLING ---
+ 
     if (form) {
         form.addEventListener('submit', async function(e) {
             e.preventDefault();
